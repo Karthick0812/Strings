@@ -1,19 +1,21 @@
-//Lenth of the string
-#include<stdio.h>
-#include<string.h>
-int main()
+//Length of the string
+#include <stdio.h>
+int strlength(char *a)
 {
-    char s[30];
-    int count=0,i=0;
-    printf("Enter the string\n");
-    scanf("%[^\n]",s);
-    
-    while(s[i]!='\0')
+    int i=0;
+    while(i[a]!='\0')
     {
-        count++;
         i++;
     }
-    
-    printf("The length of the string %d\n",count);
-    
+    return i;
+}
+
+int main() {
+  char a[100];
+  printf("enter the string\n");
+  scanf("%[^\n]",a);
+  int length=strlength(a);
+  printf("length of the string=%d\n",length);
+
+    return 0;
 }
